@@ -3,6 +3,9 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\demoController;
+
+
 
 /*
 |--------------------------------------------------------------------------
@@ -22,6 +25,11 @@ use App\Http\Controllers\AuthController;
 
 
 Route::POST('/login',[AuthController::class,'login']);
+Route::POST('/sendMessage',[AuthController::class,'sendMessage']);
+Route::POST('/sendMessageWithCurl',[AuthController::class,'sendMessageWithCurl']);
+Route::POST('/verifyOtp',[AuthController::class,'verifyOtp']);
+
+
 
 
 // Route::get('/list',[AuthController::class,'list']);
